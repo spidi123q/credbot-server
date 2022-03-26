@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "a748b527-22d7-4297-b113-5b9ffc3a5237",
+		"name": "Credbot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "weq",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "M8ZHIer5HfJ-x0xkPXoLRFAjvUkGjpjrdghfd3Xi",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"maxDurationSeconds\": 3600\n }"
+				},
+				"url": {
+					"raw": "https://api.cloudflare.com/client/v4/accounts/f742359febdecb27c06ee002576a1bc4/stream/direct_upload",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cloudflare",
+						"com"
+					],
+					"path": [
+						"client",
+						"v4",
+						"accounts",
+						"f742359febdecb27c06ee002576a1bc4",
+						"stream",
+						"direct_upload"
+					]
+				},
+				"description": "eqw"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/webhooks/rest/webhook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"message\": \"sorry\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/webhooks/rest/webhook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"webhooks",
+						"rest",
+						"webhook"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
