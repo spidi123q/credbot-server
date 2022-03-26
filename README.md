@@ -21,7 +21,7 @@ pip install rasa
 # Runing API server
 
 ```
-rasa run
+rasa run --enable-api
 ```
 
 # Running on command line
