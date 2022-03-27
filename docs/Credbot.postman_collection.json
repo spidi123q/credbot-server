@@ -6,46 +6,6 @@
 	},
 	"item": [
 		{
-			"name": "weq",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "M8ZHIer5HfJ-x0xkPXoLRFAjvUkGjpjrdghfd3Xi",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"maxDurationSeconds\": 3600\n }"
-				},
-				"url": {
-					"raw": "https://api.cloudflare.com/client/v4/accounts/f742359febdecb27c06ee002576a1bc4/stream/direct_upload",
-					"protocol": "https",
-					"host": [
-						"api",
-						"cloudflare",
-						"com"
-					],
-					"path": [
-						"client",
-						"v4",
-						"accounts",
-						"f742359febdecb27c06ee002576a1bc4",
-						"stream",
-						"direct_upload"
-					]
-				},
-				"description": "eqw"
-			},
-			"response": []
-		},
-		{
 			"name": "http://localhost:5005/webhooks/rest/webhook",
 			"request": {
 				"method": "POST",
@@ -70,6 +30,35 @@
 						"webhooks",
 						"rest",
 						"webhook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5005/model/parse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"text\": \"hi\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/model/parse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"model",
+						"parse"
 					]
 				}
 			},
