@@ -29,3 +29,7 @@ rasa run --enable-api
 ```
 rasa shell
 ```
+
+# Deployment
+
+endpint: https://afq2nfdfdj.us-east-1.awsapprunner.com
