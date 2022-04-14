@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"message\": \"sorry\"\n}",
+					"raw": "{\n    \"message\": \"are u a bot\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -20,12 +20,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5005/webhooks/rest/webhook",
-					"protocol": "http",
+					"raw": "{{base_url}}/webhooks/rest/webhook",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "5005",
 					"path": [
 						"webhooks",
 						"rest",
@@ -50,12 +48,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5005/model/parse",
-					"protocol": "http",
+					"raw": "{{base_url}}/model/parse",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "5005",
 					"path": [
 						"model",
 						"parse"
