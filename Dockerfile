@@ -6,4 +6,4 @@ COPY . .
 
 RUN rasa train --fixed-model-name=credbot
 
-CMD ["run" , "--enable-api", "--port", "8080"]
+CMD ["run" , "--enable-api", "--port", "8080", "--cors", "*"]
