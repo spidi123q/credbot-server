@@ -1,13 +1,47 @@
 version: "3.0"
 
 rules:
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
 
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
 
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - rule: Say bot name when user ask
+    steps:
+      - intent: intro
+      - action: utter_intro
+
+  - rule: Give standing instructions
+    steps:
+      - intent: standing_instructions
+      - action: utter_standing_instructions
+
+  - rule: Guide password change
+    steps:
+      - intent: change_password
+      - action: utter_change_password
+
+  - rule: Guide for KYC
+    steps:
+      - intent: kyc
+      - action: utter_kyc
+
+  - rule: Guide statement download
+    steps:
+      - intent: download_statement
+      - action: utter_download_statement
+
+  - rule: Guide profile update
+    steps:
+      - intent: personal_details
+      - action: utter_personal_details
+
+  - rule: Currecy action
+    steps:
+      - intent: currency_exchange_rate
+      - action: utter_wait

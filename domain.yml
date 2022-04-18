@@ -8,26 +8,57 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - intro
+  - standing_instructions
+  - change_password
+  - kyc
+  - download_statement
+  - personal_details
+  - currency_exchange_rate
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+    - text: "Hey! How are you?"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+    - text: "Did that help you?"
 
   utter_happy:
-  - text: "Great, carry on!"
+    - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "Bye"
+    - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: "I am a bot, powered by Rasa."
+
+  utter_intro:
+    - text: "I am a Unika, your personal assistant"
+    - text: "Unika here"
+    - text: "I am Unika"
+
+  utter_standing_instructions:
+    - text: "Go to your  account -> transactions -> payments  setup the required amount"
+
+  utter_change_password:
+    - text: "Go to your profile  -> personal details -> change password"
+
+  utter_kyc:
+    - text: "You need visit nearest branch"
+
+  utter_download_statement:
+    - text: "Go to account -> transactions/ statements  ->  select frequency & give from and to  date -> click on generate the report"
+
+  utter_personal_details:
+    - text: "Go to your profile -> personal details -> update personal details , phone number and/or email id"
+
+  utter_wait:
+    - text: "Please wait, I am checking"
+    - text: "Just a moment, Let me check"
 
 session_config:
   session_expiration_time: 60

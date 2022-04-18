@@ -24,6 +24,12 @@ pip install rasa
 rasa run --enable-api --cors "*"
 ```
 
+# Run on CLI
+
+```
+rasa shell
+```
+
 # Running on command line
 
 ```
