@@ -48,7 +48,7 @@ responses:
     - text: "Go to your profile  -> personal details -> change password"
 
   utter_kyc:
-    - text: "You need visit nearest branch"
+    - text: "You need to visit nearest branch"
 
   utter_download_statement:
     - text: "Go to account -> transactions/ statements  ->  select frequency & give from and to  date -> click on generate the report"
@@ -59,6 +59,9 @@ responses:
   utter_wait:
     - text: "Please wait, I am checking"
     - text: "Just a moment, Let me check"
+
+  utter_default:
+    - text: "Please connect with customer support for more detailed information"
 
 session_config:
   session_expiration_time: 60
