@@ -37,9 +37,9 @@ responses:
     - text: "I am a bot, powered by Rasa."
 
   utter_intro:
-    - text: "I am a Unika, your personal assistant"
-    - text: "Unika here"
-    - text: "I am Unika"
+    - text: "I am Unica, your personal assistant"
+    - text: "Unica here"
+    - text: "I am Unica"
 
   utter_standing_instructions:
     - text: "Go to your  account -> transactions -> payments  setup the required amount"
